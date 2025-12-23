@@ -1,0 +1,53 @@
+body { font-family: 'Kanit', sans-serif; background-color: #f8fafc; color: #334155; font-size: 14px; }
+.card { background: white; border-radius: 20px; border: 1px solid #f1f5f9; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+input, select { border: 1.5px solid #cbd5e1 !important; background-color: #ffffff !important; transition: all 0.2s ease; }
+input:focus, select:focus { border-color: #2563eb !important; outline: none; ring: 2px #dbeafe; background-color: #ffffff !important; }
+
+.input-error { border: 2px solid #ef4444 !important; background-color: #fef2f2 !important; animation: shake 0.2s ease-in-out 0s 2; }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(3px); } 75% { transform: translateX(-3px); } }
+
+.btn-custom { transition: all 0.25s ease; cursor: pointer; }
+.btn-blue { background-color: #2563eb; color: white; }
+.btn-blue:hover { background-color: #1e40af; transform: translateY(-1px); }
+.btn-delete-main { background-color: #ef4444; color: white; border: 1px solid #ef4444; }
+
+.modal-bg { display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.6); z-index: 100; align-items: center; justify-content: center; backdrop-filter: blur(8px); }
+
+/* Dashboard Styles */
+.dash-blue { background-color: #eff6ff; border: 1px solid #bfdbfe; color: #1e40af; }
+.dash-orange { background-color: #fff7ed; border: 1px solid #fed7aa; color: #9a3412; }
+.dash-emerald { background-color: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; }
+.dash-purple { background-color: #f5f3ff; border: 1px solid #ddd6fe; color: #5b21b6; }
+
+/* Trip Card */
+.trip-card { 
+    background: white; border-radius: 28px; border: 1px solid #f1f5f9; 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); padding: 1.75rem; position: relative; cursor: pointer;
+}
+.trip-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.03); border-color: #3b82f6; }
+.trip-card .delete-trip-btn-home { 
+    position: absolute; top: 1.25rem; right: 1.25rem; opacity: 0; transition: 0.2s; 
+    color: #ef4444; z-index: 10;
+}
+.trip-card:hover .delete-trip-btn-home { opacity: 0.6; }
+.trip-card .delete-trip-btn-home:hover { opacity: 1; color: #fca5a5; }
+
+.trip-badge-mini { background-color: #f8fafc; border: 1px solid #f1f5f9; padding: 4px 10px; border-radius: 12px; font-size: 11px; color: #64748b; font-weight: 500; }
+
+.btn-icon-red { color: #ef4444; transition: color 0.2s ease; cursor: pointer; }
+.btn-icon-red:hover { color: #fca5a5; }
+
+th { font-weight: 600 !important; font-size: 13px !important; color: #64748b !important; }
+#remarkContainer { display: none; }
+.row-error { background-color: #fef2f2 !important; border-left: 5px solid #ef4444 !important; }
+
+.badge-style { font-size: 10px; padding: 4px 12px; border-radius: 99px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 4px; width: fit-content; margin: 0 auto; border: 1px solid transparent; }
+.status-paid-badge { background-color: #ecfdf5; color: #059669; border-color: #10b981; }
+.status-unpaid-badge { background-color: #fffbeb; color: #d97706; border-color: #fbbf24; }
+.cat-tag { font-size: 10px; font-weight: 600; padding: 2px 10px; border-radius: 6px; background-color: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; display: inline-block; }
+
+.member-settle-btn { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-radius: 14px; margin-bottom: 8px; transition: all 0.2s; border: 1px solid #eef2f6; }
+.badge-payer-fixed { background-color: #eff6ff; color: #1d4ed8; border-color: #dbeafe; }
+.badge-locked { background-color: #f0fdf4; color: #16a34a; border-color: #bbf7d0; opacity: 0.8; }
+.badge-action-pay { background-color: #fef2f2; color: #ef4444; border-color: #fecaca; }
+.badge-action-pay:hover { background-color: #ef4444; color: white; }
